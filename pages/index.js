@@ -1,7 +1,10 @@
 import React from "react";
+import Card from "./../components/card";
 
 function Home() {
-    return <h1>How are you feeling right now?</h1>;
+    return <div>
+        <Card></Card>
+    </div>;
 }
 
 export default Home;
