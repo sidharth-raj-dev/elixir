@@ -1,0 +1,26 @@
+{
+	"name": "control",
+	"version": "0.0.1",
+	"description": "Understand your mood better. Monitor and change mood",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+        "lint": "eslint \"src/**/*.{js,jsx}\"",
+        "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix"
+	},
+	"author": "Sidharth Raj",
+	"license": "ISC",
+	"dependencies": {
+		"next": "^12.2.5",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.23.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-react": "^7.31.1"
+	}
+}
