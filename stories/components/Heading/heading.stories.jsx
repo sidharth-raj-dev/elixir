@@ -6,4 +6,9 @@ export default {
     component: Heading,
 };
 
-export const DefaultCard = () => <Heading font="Arial"/>;
+const Template = (args) => <Heading {...args} />;
+
+export const Dynamic = Template.bind({});
+Dynamic.args = { font: "Poppins" };
+
+export const DefaultCard = () => <Heading font="Poppins"/>;
