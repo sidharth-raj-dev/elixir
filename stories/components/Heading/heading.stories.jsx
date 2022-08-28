@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../../../components/heading";
 
 export default {
-    title: "Heading",
+    title: "components/Heading",
     component: Heading,
 };
 
