@@ -11,8 +11,11 @@ const Template = (args) => <Heading {...args} />;
 export const Dynamic = Template.bind({});
 
 const config = {
-    font: "Poppins"
+    font_family: "Poppins",
+    font_size: 22,
+    color: "black",
+    font_weight: 500
 };
 Dynamic.args = { styleConfig: config };
 
-export const DefaultCard = () => <Heading styleConfig={config}/>;
+export const Default = () => <Heading styleConfig={config}/>;
