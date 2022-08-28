@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./css/button.module.css";
 
-function Button({styleConfig}) {
+function Button({config, styleConfig}) {
     return <button className={styles.button} style={{
         height: styleConfig.height,
         width: styleConfig.width,
@@ -11,7 +11,7 @@ function Button({styleConfig}) {
         marginLeft: styleConfig.margin_left,
         marginBottom: styleConfig.margin_bottom,
         marginRight: styleConfig.margin_right
-    }}></button>;
+    }}> {config.text} </button>;
 }
 
 export default Button;
