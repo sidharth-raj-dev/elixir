@@ -14,7 +14,11 @@ const config = {
     font_family: "Poppins",
     font_size: 22,
     color: "black",
-    font_weight: 500
+    font_weight: 500,
+    margin_top: "250px",
+    margin_left: "250px",
+    margin_bottom: "0px",
+    margin_right: "0px"
 };
 Dynamic.args = { styleConfig: config };
 

@@ -6,7 +6,11 @@ function Card({styleConfig}) {
         height: styleConfig.height,
         width: styleConfig.width,
         borderRadius: styleConfig.border_radius,
-        background: styleConfig.background
+        background: styleConfig.background,
+        marginTop: styleConfig.margin_top,
+        marginLeft: styleConfig.margin_left,
+        marginBottom: styleConfig.margin_bottom,
+        marginRight: styleConfig.margin_right
     }}></div>;
 }
 
