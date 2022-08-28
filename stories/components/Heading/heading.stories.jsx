@@ -9,6 +9,10 @@ export default {
 const Template = (args) => <Heading {...args} />;
 
 export const Dynamic = Template.bind({});
-Dynamic.args = { font: "Poppins" };
 
-export const DefaultCard = () => <Heading font="Poppins"/>;
+const config = {
+    font: "Poppins"
+};
+Dynamic.args = { styleConfig: config };
+
+export const DefaultCard = () => <Heading styleConfig={config}/>;
