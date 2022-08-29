@@ -1,10 +1,11 @@
 import React from "react";
-// import styles from "./css/heading.module.css";
+import styles from "./css/heading.module.css";
 
 function Heading({styleConfig}) {
     return (
-        <div 
-            style={{ 
+        <div
+            className={styles.heading}
+            style={{
                 fontFamily: styleConfig.font_family,
                 fontSize: styleConfig.font_size,
                 color: styleConfig.color,
