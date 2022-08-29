@@ -23,6 +23,10 @@ const styleConfig = {
     left: "332px",
     rotate: "0"
 };
-Dynamic.args = { styleConfig: config };
+
+Dynamic.args = { 
+    config: config, 
+    styleConfig: styleConfig 
+};
 
 export const Default = () => <Text config={config} styleConfig={styleConfig}/>;
