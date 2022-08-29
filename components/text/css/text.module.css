@@ -1,0 +1,10 @@
+.text {
+    font-family: 'Poppins';
+    font-size: 16;
+    color: #aaaaaa;
+    font-weight: 500;
+    position: absolute;
+    top: 720px;
+    left: 332px;
+    transform: rotate(0deg);
+}
