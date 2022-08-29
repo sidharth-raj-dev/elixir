@@ -11,6 +11,7 @@ function LayoutFlex({styleConfig, children}) {
                 flexDirection: styleConfig.flex_direction,
                 justifyContent: styleConfig.justify_content,
                 alignItems: styleConfig.align_items,
+                flexWrap: styleConfig.flex_wrap,
                 border: `${styleConfig.border} solid ${styleConfig.border_color}`,
                 marginTop: styleConfig.margin_top,
                 marginLeft: styleConfig.margin_left,

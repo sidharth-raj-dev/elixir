@@ -3,6 +3,7 @@
     width: 500px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     border: 1px solid #aaaaaa;
     position: absolute;
     margin-top: 0px;

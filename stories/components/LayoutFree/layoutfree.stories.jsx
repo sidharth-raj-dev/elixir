@@ -21,10 +21,10 @@ const styleConfig = {
 const cardStyleConfig = {
     height: "250px",
     width: "250px",
-    border_radius: "50px",
+    border_radius: "9px",
     background: "#e0e0e0",
-    margin_top: "0px",
-    margin_left: "0px",
+    margin_top: "20px",
+    margin_left: "20px",
     margin_bottom: "0px",
     margin_right: "0px"
 };

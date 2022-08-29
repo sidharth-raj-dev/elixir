@@ -37,22 +37,17 @@ const Template = (args) => (
     <LayoutFlex
         styleConfig={args.styleConfig}
     >
-        <Card styleConfig={args.cardConfig}/>
+        <Card styleConfig={args.cardStyleConfig}/>
+        <Card styleConfig={args.cardStyleConfig}/>
+        <Card styleConfig={args.cardStyleConfig}/>
+        <Card styleConfig={args.cardStyleConfig}/>
     </LayoutFlex>);
 
-export const Dynamic = Template.bind({});
+export const MultipleChild = Template.bind({});
 
 // making controls
 
-Dynamic.args = {
+MultipleChild.args = {
     styleConfig: styleConfig,
-    cardConfig: cardStyleConfig
+    cardStyleConfig: cardStyleConfig
 };
-
-export const Default = () => (
-    <LayoutFlex
-        styleConfig={styleConfig}
-    >
-        <Card styleConfig={cardStyleConfig}/>
-    </LayoutFlex>
-);
