@@ -21,7 +21,6 @@ const styleConfig = {
     background: "#e0e0e0",
     font_family: "Poppins",
     font_size: 16,
-    color: "#aaaaaa",
     font_weight: 700,
     margin_top: "250px",
     margin_left: "250px",

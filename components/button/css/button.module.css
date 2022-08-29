@@ -1,6 +1,7 @@
 .button {
     width: 108px;
     height: 108px;
+    color: #aaaaaa;
     border: 0px;
     border-radius: 9px;
     background: #e0e0e0;
@@ -12,9 +13,7 @@
     margin-right: 0px;
 }
 
-
-
-button:hover {
+.button:hover {
     border: 0px;
     text-shadow: 0px 0px 0px transparent;
     border-radius: 9px;
@@ -23,12 +22,8 @@ button:hover {
             inset -6px -6px 12px #ededed;
 }
 
-button:active {
-    outline: none;
-    border: none;
-    color: black
+.button:active {
+    color: rgb(255, 144, 144);
+    border: 2px solid rgb(255, 144, 144);
 }
 
-button:focus {
-    outline: 1px;
-}
