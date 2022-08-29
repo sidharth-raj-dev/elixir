@@ -7,11 +7,7 @@ export default {
     component: LayoutFree,
 };
 
-// const Template = (args) => <LayoutFree {...args} />;
-
-// export const Dynamic = Template.bind({});
-
-const config = {
+const styleConfig = {
     height: "500px",
     width: "500px",
     margin_top: "250px",
@@ -20,7 +16,7 @@ const config = {
     margin_right: "0px"
 };
 
-const cardConfig = {
+const cardStyleConfig = {
     height: "250px",
     width: "250px",
     border_radius: "50px",
@@ -31,12 +27,32 @@ const cardConfig = {
     margin_right: "0px"
 };
 
-// Dynamic.args = { styleConfig: config };
+const Template = (args) => (
+    <LayoutFree
+        styleConfig={args.styleConfig}
+    >
+        <Card styleConfig={args.cardConfig}/>
+    </LayoutFree>);
+
+export const Dynamic = Template.bind({});
+
+// making controls
+
+Dynamic.args = {
+    styleConfig: styleConfig,
+    cardConfig: cardStyleConfig
+};
+
+// support for range-sliders, color-picker etc.
+
+// Dynamic.argTypes = {
+//     "styleConfig.height" : { control: "range"}
+// };
 
 export const Default = () => (
-    <LayoutFree 
-        styleConfig={config}
+    <LayoutFree
+        styleConfig={styleConfig}
     >
-        <Card styleConfig={cardConfig}/>
+        <Card styleConfig={cardStyleConfig}/>
     </LayoutFree>
 );
