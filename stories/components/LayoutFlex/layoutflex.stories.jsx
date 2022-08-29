@@ -1,15 +1,18 @@
 import React from "react";
-import LayoutFree from "../../../components/layout-free";
+import LayoutFlex from "../../../components/layout-flex";
 import Card from "../../../components/card";
 
 export default {
-    title: "components/LayoutFree",
-    component: LayoutFree,
+    title: "components/LayoutFlex",
+    component: LayoutFlex,
 };
 
 const styleConfig = {
-    height: "500px",
-    width: "500px",
+    height: "250px",
+    width: "250px",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     border: "1px",
     border_color: "#aaaaaa",
     margin_top: "250px",
@@ -19,9 +22,9 @@ const styleConfig = {
 };
 
 const cardStyleConfig = {
-    height: "250px",
-    width: "250px",
-    border_radius: "50px",
+    height: "112px",
+    width: "112px",
+    border_radius: "9px",
     background: "#e0e0e0",
     margin_top: "0px",
     margin_left: "0px",
@@ -30,11 +33,11 @@ const cardStyleConfig = {
 };
 
 const Template = (args) => (
-    <LayoutFree
+    <LayoutFlex
         styleConfig={args.styleConfig}
     >
         <Card styleConfig={args.cardConfig}/>
-    </LayoutFree>);
+    </LayoutFlex>);
 
 export const Dynamic = Template.bind({});
 
@@ -45,16 +48,10 @@ Dynamic.args = {
     cardConfig: cardStyleConfig
 };
 
-// support for range-sliders, color-picker etc.
-
-// Dynamic.argTypes = {
-//     "styleConfig.height" : { control: "range"}
-// };
-
 export const Default = () => (
-    <LayoutFree
+    <LayoutFlex
         styleConfig={styleConfig}
     >
         <Card styleConfig={cardStyleConfig}/>
-    </LayoutFree>
+    </LayoutFlex>
 );

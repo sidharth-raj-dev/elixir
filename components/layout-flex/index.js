@@ -1,13 +1,16 @@
 import React from "react";
-import styles from "./css/layout-free.module.css";
+import styles from "./css/layout-flex.module.css";
 
-function LayoutFree({styleConfig, children}) {
+function LayoutFlex({styleConfig, children}) {
     return (
         <div
-            className={styles.layoutfree}
+            className={styles.layoutflex}
             style={{
                 height: styleConfig.height,
                 width: styleConfig.width,
+                flexDirection: styleConfig.flex_direction,
+                justifyContent: styleConfig.justify_content,
+                alignItems: styleConfig.align_items,
                 border: `${styleConfig.border} solid ${styleConfig.border_color}`,
                 marginTop: styleConfig.margin_top,
                 marginLeft: styleConfig.margin_left,
@@ -20,4 +23,4 @@ function LayoutFree({styleConfig, children}) {
     );
 }
 
-export default LayoutFree;
+export default LayoutFlex;

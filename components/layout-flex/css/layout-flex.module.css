@@ -1,0 +1,12 @@
+.layoutflex {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #aaaaaa;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
