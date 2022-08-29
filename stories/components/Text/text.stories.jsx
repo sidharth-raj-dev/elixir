@@ -17,7 +17,7 @@ const config = {
 const styleConfig = {
     font_family: "Poppins",
     font_size: 16,
-    color: "black",
+    color: "#aaaaaa",
     font_weight: 500,
     top: "400px",
     left: "332px",
