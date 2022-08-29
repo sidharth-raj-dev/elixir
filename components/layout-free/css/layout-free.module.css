@@ -1,5 +1,8 @@
 .layoutfree {
+    height: 500px;
+    width: 500px;
     position: relative;
+    border: 1px solid #aaaaaa;
     margin-top: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
