@@ -16,7 +16,9 @@ function LayoutFlex({styleConfig, children}) {
                 marginTop: styleConfig.margin_top,
                 marginLeft: styleConfig.margin_left,
                 marginBottom: styleConfig.margin_bottom,
-                marginRight: styleConfig.margin_right
+                marginRight: styleConfig.margin_right,
+                top: styleConfig.top,
+                left: styleConfig.left
             }}
         >
             {children}
